@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rvReviews"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:clipToPadding="false"
+       android:paddingTop="@dimen/learn_spacing_large"
+       android:overScrollMode="never"
+       android:paddingStart="@dimen/learn_spacing_middle"
+       android:paddingEnd="@dimen/learn_spacing_middle"
+       android:paddingBottom="@dimen/learn_spacing_large"/>
+</LinearLayout>

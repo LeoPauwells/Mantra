@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.LearnInstructorDetailActivity"
+    tools:showIn="@layout/learn_activity_instructor_detail">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFavourites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/learn_spacing_standard_new"
+        android:paddingBottom="@dimen/_50sdp"
+        android:paddingStart="@dimen/learn_spacing_middle"
+        android:paddingEnd="@dimen/learn_spacing_middle"
+        android:overScrollMode="never"
+        android:nestedScrollingEnabled="false"
+        android:clipToPadding="false" />
+
+</androidx.core.widget.NestedScrollView>

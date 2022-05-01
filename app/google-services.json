@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "285178783229",
+    "project_id": "mantra-fe232",
+    "storage_bucket": "mantra-fe232.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285178783229:android:7e65749516bbbd3e8da594",
+        "android_client_info": {
+          "package_name": "com.example.mantraprototipo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285178783229-ph16ecnri3qbkddb2ik5g54laiihsbni.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mantraprototipo",
+            "certificate_hash": "c5f71a91a5b2708c1837826ac94daca14dd36b6c"
+          }
+        },
+        {
+          "client_id": "285178783229-r8lvmhgfibopqbcgnm0dfllpc1klo5so.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwsIxr4Li222K-P_a4nMmN1jQJTAb0UVY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285178783229-r8lvmhgfibopqbcgnm0dfllpc1klo5so.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
