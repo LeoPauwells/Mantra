@@ -72,13 +72,16 @@ import java.util.Map;
 
 public class Signup extends AppCompatActivity{
 
-    private Button LoginBtn;
+    private Button SigninBtn;
     private TextView correo;
     private  TextView contraseña;
-    private TextView passwordRecoveryTextView;
+    private TextView telefono;
     private TextView signupTextView;
+    private TextView username;
     private  String contraseñaS;
     private  String correoS;
+    private String telefonoS;
+    private String usernameS;
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
@@ -91,19 +94,22 @@ public class Signup extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        LoginBtn= findViewById(R.id.loginButton);
-        correo = findViewById(R.id.correoEditar);
-        contraseña = findViewById(R.id.contraseñaEditar);
-        passwordRecoveryTextView = findViewById(R.id.passwordRecoveryTextView);
+        SigninBtn= findViewById(R.id.button_signin);
+        correo = findViewById(R.id.et_email);
+        contraseña = findViewById(R.id.et_password);
+        telefono = findViewById(R.id.et_phone);
         signupTextView = findViewById(R.id.signupTextView2);
+        username= findViewById(R.id.et_username);
 
 
 
-        LoginBtn.setOnClickListener(new View.OnClickListener(){
+        SigninBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public  void  onClick(View view){
                 correoS=correo.getText().toString();
                 contraseñaS=contraseña.getText().toString();
+                usernameS=correo.getText().toString();
+                telefonoS=contraseña.getText().toString();
                 if(TextUtils.isEmpty(correoS)&&TextUtils.isEmpty(contraseñaS)) {
                     Warning();
                 }
@@ -118,6 +124,8 @@ public class Signup extends AppCompatActivity{
 
                                 String correoAlta = correo.getText().toString();
                                 String passwordAlta = contraseña.getText().toString();
+                                String telefonoAlta = telefono.getText().toString();
+                                String usernameAlta = username.getText().toString();
 
                                 if (TextUtils.isEmpty(correoAlta) || TextUtils.isEmpty(passwordAlta))
                                 {
@@ -128,6 +136,8 @@ public class Signup extends AppCompatActivity{
                                     Map<String, Object> data = new HashMap<>();
                                     data.put("contraseña", correoAlta);
                                     data.put("correo", passwordAlta);
+                                    data.put("telefono",telefonoAlta);
+                                    data.put("username",usernameAlta);
 
                                     db.collection("usuarios-aprobar")
                                             .add(data)
@@ -178,7 +188,8 @@ public class Signup extends AppCompatActivity{
         data.put("nombre", "---");
         data.put("contraseña", contraseñaS);
         data.put("correo", correoS);
-       // data.put("imagen", imgDefault);
+        data.put("username",usernameS);
+        data.put("telefono", telefonoS);
         data.put("isAdmin", false);
 
         db.collection("usuarios").document(correoS).set(data);
