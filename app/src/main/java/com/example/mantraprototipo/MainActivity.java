@@ -34,7 +34,7 @@ import com.google.firebase.auth.UserProfileChangeRequest;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
+//Tula.
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
@@ -559,13 +559,13 @@ public class MainActivity extends AppCompatActivity {
         // [END auth_test_phone_auto]
     }
 
-    public void gamesMakeGoogleSignInOptions() {
+    /*public void gamesMakeGoogleSignInOptions() {
         // [START games_google_signin_options]
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_GAMES_SIGN_IN)
                 .requestServerAuthCode(getString(R.string.default_web_client_id))
                 .build();
         // [END games_google_signin_options]
-    }
+    }*/
 
     // [START games_auth_with_firebase]
     // Call this both in the silent sign-in task's OnCompleteListener and in the
