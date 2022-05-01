@@ -40,7 +40,13 @@
         <item name="strokeWidth">@dimen/_1sdp</item>
         <item name="android:textColor">@color/learn_colorPrimary</item>
     </style>
-
+    <style name="Button1" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/button1_bg</item>
+        <item name="android:minWidth">200dp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
     <style name="LearnEditTextStyleRound">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
