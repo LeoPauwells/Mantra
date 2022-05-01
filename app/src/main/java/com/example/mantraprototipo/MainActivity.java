@@ -252,33 +252,6 @@ public class MainActivity extends AppCompatActivity {
         // [END reauthenticate]
     }
 
-    public void authWithGithub() {
-        FirebaseAuth mAuth = FirebaseAuth.getInstance();
-
-        // [START auth_with_github]
-        String token = "<GITHUB-ACCESS-TOKEN>";
-        AuthCredential credential = GithubAuthProvider.getCredential(token);
-        mAuth.signInWithCredential(credential)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        Log.d(TAG, "signInWithCredential:onComplete:" + task.isSuccessful());
-
-                        // If sign in fails, display a message to the user. If sign in succeeds
-                        // the auth state listener will be notified and logic to handle the
-                        // signed in user can be handled in the listener.
-                        if (!task.isSuccessful()) {
-                            Log.w(TAG, "signInWithCredential", task.getException());
-                            Toast.makeText(MainActivity.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
-                        }
-
-                        // ...
-                    }
-                });
-        // [END auth_with_github]
-    }
-
 
     public void linkAndMerge(AuthCredential credential) {
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
