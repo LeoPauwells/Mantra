@@ -3,27 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/layout/learn_activity_achivements.xml" value="0.20416666666666666" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/layout/learn_activity_chat.xml" value="0.1" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/layout/learn_activity_course_content_detail.xml" value="0.20416666666666666" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/layout/learn_activity_friend_detail.xml" value="0.20416666666666666" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/layout/learn_activity_instructor_detail.xml" value="0.20416666666666666" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/layout/learn_activity_login.xml" value="0.2" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/layout/learn_activity_my_friends.xml" value="0.20416666666666666" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/layout/learn_activity_register.xml" value="0.20416666666666666" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/layout/learn_activity_search.xml" value="0.20416666666666666" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/layout/learn_content_instructor_detail.xml" value="0.20416666666666666" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/layout/learn_fragment_chats.xml" value="0.20416666666666666" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/layout/learn_fragment_course_detail.xml" value="0.20416666666666666" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/layout/learn_fragment_course_reviews.xml" value="0.20416666666666666" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/layout/learn_fragment_lessons.xml" value="0.20416666666666666" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/layout/learn_fragment_profile.xml" value="0.20416666666666666" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/layout/learn_item_search.xml" value="0.20416666666666666" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/menu/learn_bottom_navigation.xml" value="0.25" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/menu/learn_menu_instructor_detail.xml" value="0.20416666666666666" />
-        <entry key="..\:/Repositorios/Mantra/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/learn_activity_achivements.xml" value="0.18958333333333333" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/learn_activity_chat.xml" value="0.18958333333333333" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/learn_activity_instructor_detail.xml" value="0.18958333333333333" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/learn_activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/learn_activity_register.xml" value="0.2" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/learn_activity_search.xml" value="0.18958333333333333" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/learn_fragment_chats.xml" value="0.18958333333333333" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/learn_fragment_lessons.xml" value="0.18958333333333333" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/learn_fragment_profile.xml" value="0.18958333333333333" />
       </map>
     </option>
   </component>
