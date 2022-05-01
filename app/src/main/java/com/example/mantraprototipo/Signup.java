@@ -89,7 +89,7 @@ public class Signup extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.signup);
+        setContentView(R.layout.activity_signup);
 
         LoginBtn= findViewById(R.id.loginButton);
         correo = findViewById(R.id.correoEditar);
@@ -109,8 +109,8 @@ public class Signup extends AppCompatActivity{
                 }
                 else
                 {
-                    FirebaseAuth.getInstance().signInWithEmailAndPassword("javier.garcia18@tectijuana.edu.mx",
-                            "17211525").addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    FirebaseAuth.getInstance().signInWithEmailAndPassword("leo.pauwells17@tectijuana.edu.mx",
+                            "17212346").addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful())
@@ -178,8 +178,7 @@ public class Signup extends AppCompatActivity{
         data.put("nombre", "---");
         data.put("contraseña", contraseñaS);
         data.put("correo", correoS);
-        data.put("noControl", "00000000");
-        data.put("imagen", imgDefault);
+       // data.put("imagen", imgDefault);
         data.put("isAdmin", false);
 
         db.collection("usuarios").document(correoS).set(data);
