@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".activities.LearnInstructorDetailActivity">
+    tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
@@ -35,14 +35,6 @@
                     android:layout_marginTop="@dimen/_60sdp"
                     android:layout_gravity="center_horizontal">
 
-                    <com.iqonic.learnerapp.utils.LearnerCircleImageView
-                        android:id="@+id/ivProfile"
-                        android:layout_width="@dimen/_80sdp"
-                        android:layout_height="@dimen/_80sdp"
-                        android:layout_gravity="center_horizontal"
-                        android:padding="@dimen/learn_spacing_control_half"
-                        android:src="@drawable/learn_profile_8" />
-
                     <View
                         android:id="@+id/viewStatus"
                         android:layout_width="@dimen/_15sdp"
@@ -71,7 +63,6 @@
                     android:padding="@dimen/learn_spacing_control_half"
                     android:textSize="@dimen/learn_font_size_medium"
                     android:textColor="@color/learn_textColorSecondary"
-                    android:textAppearance="@style/LearnerFontSemiBold"
                     android:text="@string/learn_lbl_instructors" />
 
                 <com.google.android.material.button.MaterialButton
@@ -111,7 +102,6 @@
                             android:textAllCaps="true"
                             android:textSize="@dimen/learn_font_size_medium"
                             android:textColor="@color/learn_textColorSecondary"
-                            android:textAppearance="@style/LearnerFontSemiBold"
                             android:text="@string/learn_lbl_courses" />
                     </LinearLayout>
 
@@ -136,7 +126,6 @@
                             android:textAllCaps="true"
                             android:textSize="@dimen/learn_font_size_medium"
                             android:textColor="@color/learn_textColorSecondary"
-                            android:textAppearance="@style/LearnerFontSemiBold"
                             android:text="@string/learn_lbl_ratings" />
                     </LinearLayout>
 
@@ -160,7 +149,6 @@
                             android:textAllCaps="true"
                             android:textSize="@dimen/learn_font_size_medium"
                             android:textColor="@color/learn_textColorSecondary"
-                            android:textAppearance="@style/LearnerFontSemiBold"
                             android:text="@string/learn_lbl_students" />
                     </LinearLayout>
 
@@ -194,7 +182,6 @@
                         android:layout_centerVertical="true"
                         android:src="@drawable/learn_ic_more"
                         android:rotation="90"
-                        android:tint="@color/learn_colorPrimary"
                         android:layout_alignParentEnd="true"
                         android:padding="@dimen/learn_spacing_medium"
                         android:layout_marginEnd="@dimen/learn_spacing_control" />
@@ -207,8 +194,5 @@
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
-
-    <include layout="@layout/learn_content_instructor_detail" />
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

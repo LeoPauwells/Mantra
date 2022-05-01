@@ -54,7 +54,6 @@
                 android:background="@null"
                 android:hint="@string/learn_lbl_password"
                 android:maxEms="7"
-                android:textAppearance="@style/LearnerFontSemiBold"
                 android:textColor="@color/learn_textColorPrimary"
                 android:textSize="@dimen/learn_font_size_normal" />
 
@@ -67,7 +66,6 @@
                 android:layout_alignParentEnd="true"
                 android:textColor="@color/learn_colorPrimary"
                 android:textSize="@dimen/learn_font_size_normal"
-                android:textAppearance="@style/LearnerFontSemiBold"
                 android:text="@string/learn_lbl_forget" />
 
 
@@ -98,7 +96,6 @@
             android:layout_height="wrap_content"
             android:textColor="@color/learn_textColorPrimary"
             android:textSize="@dimen/learn_font_size_medium"
-            android:textAppearance="@style/LearnerFontMedium"
             android:text="@string/learn_lbl_don_t_joined_yet"
             />
         <TextView
@@ -107,7 +104,6 @@
             android:layout_height="wrap_content"
             android:textColor="@color/learn_colorPrimary"
             android:textSize="@dimen/learn_font_size_medium"
-            android:textAppearance="@style/LearnerFontSemiBold"
             android:padding="@dimen/learn_spacing_control"
             android:layout_marginBottom="@dimen/learn_spacing_standard_new"
             android:text="@string/learn_lbl_join"

@@ -15,21 +15,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/learn_spacing_standard_new">
-            <com.iqonic.learnerapp.utils.LearnerCircleImageView
-                android:id="@+id/ivProfile"
-                android:layout_width="@dimen/_100sdp"
-                android:layout_height="@dimen/_100sdp"
-                app:civ_border_color="@color/learn_white"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginEnd="@dimen/learn_spacing_control"
-                app:civ_border_width="@dimen/learn_spacing_control_half"
-                android:padding="@dimen/learn_spacing_control_half"
-                android:src="@drawable/learn_profile_8" />
+
             <TextView
                 android:id="@+id/tvUserName"
                 style="@style/LearnHeadingBig"
                 android:textSize="@dimen/learn_font_size_xlarge"
-                android:layout_toEndOf="@id/ivProfile"
                 android:layout_marginTop="@dimen/_14sdp"
                 android:layout_marginStart="@dimen/learn_spacing_middle"
                 android:textStyle="bold"
@@ -39,17 +29,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvUserName"
-                android:layout_toEndOf="@id/ivProfile"
                 android:gravity="center_vertical"
                 android:padding="@dimen/learn_spacing_control_half"
                 android:layout_marginStart="@dimen/learn_spacing_middle"
                 android:textSize="@dimen/learn_font_size_medium"
                 android:textColor="@color/learn_textColorSecondary"
-                android:textAppearance="@style/LearnerFontSemiBold"
                 android:layout_marginEnd="@dimen/learn_font_size_large"
                 android:text="@string/learn_lbl_390_290_points" />
             <LinearLayout
-                android:layout_toEndOf="@id/ivProfile"
                 android:layout_below="@id/tvStartNewChat"
                 android:layout_marginTop="@dimen/learn_spacing_control"
                 android:layout_marginStart="@dimen/learn_spacing_middle"
@@ -113,7 +100,6 @@
             android:layout_marginStart="@dimen/learn_spacing_standard_new"
             android:textSize="@dimen/learn_font_size_small"
             android:textColor="@color/learn_textColorGrey"
-            android:textAppearance="@style/LearnerFontBold"
             android:layout_marginEnd="@dimen/learn_font_size_large"
             android:text="@string/learn_lbl_general" />
 
@@ -147,7 +133,6 @@
                     android:drawableTint="@color/learn_textColorThird"
                     android:textSize="@dimen/learn_font_size_normal"
                     android:textColor="@color/learn_textColorPrimary"
-                    android:textAppearance="@style/LearnerFontMedium"
                     android:layout_marginEnd="@dimen/learn_spacing_middle"
                     android:layout_marginStart="@dimen/learn_spacing_standard"
                     android:text="@string/learn_lbl_favourite_courses" />
@@ -169,7 +154,6 @@
                     android:background="@drawable/learn_shadoe"
                     android:src="@drawable/learn_ic_user"
                     android:padding="@dimen/_12sdp"
-                    android:tint="@color/learn_colorPrimary"
                     />
                 <TextView
                     android:layout_width="match_parent"
@@ -180,7 +164,6 @@
                     android:drawableTint="@color/learn_textColorThird"
                     android:textSize="@dimen/learn_font_size_normal"
                     android:textColor="@color/learn_textColorPrimary"
-                    android:textAppearance="@style/LearnerFontMedium"
                     android:layout_marginEnd="@dimen/learn_spacing_middle"
                     android:layout_marginStart="@dimen/learn_spacing_standard"
                     android:text="@string/learn_lbl_my_friends" />
@@ -213,7 +196,6 @@
                     android:drawableTint="@color/learn_textColorThird"
                     android:textSize="@dimen/learn_font_size_normal"
                     android:textColor="@color/learn_textColorPrimary"
-                    android:textAppearance="@style/LearnerFontMedium"
                     android:layout_marginEnd="@dimen/learn_spacing_middle"
                     android:layout_marginStart="@dimen/learn_spacing_standard"
                     android:text="@string/learn_lbl_achievements" />
@@ -232,7 +214,6 @@
             android:layout_marginStart="@dimen/learn_spacing_standard_new"
             android:textSize="@dimen/learn_font_size_small"
             android:textColor="@color/learn_textColorGrey"
-            android:textAppearance="@style/LearnerFontBold"
             android:layout_marginEnd="@dimen/learn_font_size_large"
             android:text="@string/learn_lbl_settings" />
         <LinearLayout
@@ -253,9 +234,8 @@
                     android:layout_height="@dimen/_40sdp"
                     android:background="@drawable/learn_shadoe"
                     android:src="@drawable/learn_ic_key"
-                    android:tint="@color/learn_green"
                     android:padding="@dimen/_13sdp"
-                    />
+                    app:tint="@color/learn_green" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -265,7 +245,6 @@
                     android:drawableTint="@color/learn_textColorThird"
                     android:textSize="@dimen/learn_font_size_normal"
                     android:textColor="@color/learn_textColorPrimary"
-                    android:textAppearance="@style/LearnerFontMedium"
                     android:layout_marginEnd="@dimen/learn_spacing_middle"
                     android:layout_marginStart="@dimen/learn_spacing_standard"
                     android:text="@string/learn_lbl_edit_login_details" />
@@ -296,7 +275,6 @@
                     android:drawableTint="@color/learn_textColorThird"
                     android:textSize="@dimen/learn_font_size_normal"
                     android:textColor="@color/learn_textColorPrimary"
-                    android:textAppearance="@style/LearnerFontMedium"
                     android:layout_marginEnd="@dimen/learn_spacing_middle"
                     android:layout_marginStart="@dimen/learn_spacing_standard"
                     android:text="@string/learn_lbl_update_interests" />
@@ -328,7 +306,6 @@
                     android:drawableTint="@color/learn_textColorThird"
                     android:textSize="@dimen/learn_font_size_normal"
                     android:textColor="@color/learn_textColorPrimary"
-                    android:textAppearance="@style/LearnerFontMedium"
                     android:layout_marginEnd="@dimen/learn_spacing_middle"
                     android:layout_marginStart="@dimen/learn_spacing_standard"
                     android:text="@string/learn_lbl_blocked_users" />

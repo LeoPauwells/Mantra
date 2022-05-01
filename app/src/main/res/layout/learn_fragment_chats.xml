@@ -26,13 +26,13 @@
             android:layout_height="@dimen/_32sdp"
             android:background="@drawable/learner_ic_fab_back"
             android:src="@drawable/learn_ic_search"
-            android:tint="@color/learn_colorPrimary"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="@dimen/learn_spacing_control_half"
             android:layout_marginEnd="@dimen/learn_spacing_standard_new"
             android:elevation="@dimen/learn_spacing_control"
             android:layout_alignTop="@id/tvMyCourse"
-            android:padding="@dimen/learn_spacing_middle" />
+            android:padding="@dimen/learn_spacing_middle"
+            app:tint="@color/learn_colorPrimary" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/tabChats"
@@ -113,7 +113,6 @@
             android:layout_marginStart="@dimen/learn_spacing_standard_new"
             android:textSize="@dimen/learn_font_size_small"
             android:textColor="@color/learn_textColorSecondary"
-            android:textAppearance="@style/LearnerFontBold"
             android:layout_marginEnd="@dimen/learn_font_size_large"
             android:text="@string/learn_lbl_start_a_new_chat" />
 

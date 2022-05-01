@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <RelativeLayout
@@ -28,7 +29,6 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/learn_textColorPrimary"
                 android:textStyle="bold"
-                android:textAppearance="@style/LearnerFontSemiBold"
                 android:textSize="@dimen/learn_font_size_normal"
                 android:text="@string/learn_lbl_marc_elliot"/>
             <TextView
@@ -42,16 +42,6 @@
                 android:text="@string/learn_lbl_active"/>
 
         </LinearLayout>
-        <com.iqonic.learnerapp.utils.LearnerCircleImageView
-            android:id="@+id/ivUser"
-            android:layout_width="@dimen/_30sdp"
-            android:layout_height="@dimen/_30sdp"
-            android:src="@drawable/learn_profile_8"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="@dimen/learn_spacing_middle"
-            android:layout_marginStart="@dimen/learn_spacing_control"
-            />
     </RelativeLayout>
 
   <androidx.recyclerview.widget.RecyclerView
@@ -79,7 +69,6 @@
            android:id="@+id/ivEmoji"
            android:layout_width="@dimen/_30sdp"
            android:layout_height="@dimen/_30sdp"
-           android:tint="@color/learn_textColorSecondary"
            android:layout_centerVertical="true"
            android:layout_marginStart="@dimen/learn_spacing_middle"
            android:src="@drawable/learn_ic_insert_emoticon_black_24dp"/>
@@ -97,11 +86,11 @@
             android:layout_height="@dimen/_50sdp"
             android:layout_alignParentEnd="true"
             android:src="@drawable/learn_ic_back"
-            android:tint="@color/learn_white"
             android:rotation="90"
             android:padding="@dimen/learn_spacing_standard_new"
             android:backgroundTint="@color/learn_colorPrimary"
-            android:background="@drawable/learn_bg_circle_white"/>
+            android:background="@drawable/learn_bg_circle_white"
+            app:tint="@color/learn_white" />
     </RelativeLayout>
 
 </RelativeLayout>

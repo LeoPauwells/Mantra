@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".activities.LearnerDashboardActivity">
+    tools:context=".MainActivity">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintTop"
         android:background="@drawable/learn_bg_bottom_shadow"
@@ -27,7 +27,6 @@
                 android:paddingEnd="@dimen/learn_spacing_standard"
                 android:drawablePadding="@dimen/learn_spacing_standard_new"
                 android:hint="@string/learn_hint_search"
-                android:textAppearance="@style/LearnerFontMedium"
                 android:textSize="@dimen/learn_font_size_large"
                 android:paddingStart="@dimen/learn_spacing_standard_new"
                 android:background="@null" />
@@ -41,7 +40,6 @@
                 android:layout_toStartOf="@id/tvClear"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="@dimen/learn_spacing_control"
-                android:textAppearance="@style/LearnerFontSemiBold"
                 android:textColor="@color/learn_colorPrimary"
                 android:textSize="@dimen/learn_font_size_large" />
 
@@ -51,9 +49,9 @@
                 android:layout_height="@dimen/_30sdp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:tint="@color/learn_textColorSecondary"
                 android:padding="@dimen/learn_spacing_control"
-                android:src="@drawable/learn_ic_close_black" />
+                android:src="@drawable/learn_ic_close_black"
+                app:tint="@color/learn_textColorSecondary" />
 
         </RelativeLayout>
         <LinearLayout
@@ -73,9 +71,9 @@
                 android:layout_gravity="end"
                 android:layout_marginEnd="@dimen/learn_spacing_middle"
                 android:layout_marginTop="@dimen/learn_spacing_standard_new"
-                android:tint="@color/learn_white"
                 android:padding="@dimen/learn_spacing_control"
-                android:src="@drawable/learn_ic_close_black" />
+                android:src="@drawable/learn_ic_close_black"
+                app:tint="@color/learn_white" />
             <TextView
                 style="@style/LearnHeadingBig"
                 android:layout_marginStart="@dimen/learn_spacing_standard_new"
@@ -93,7 +91,6 @@
                 android:layout_marginStart="@dimen/learn_spacing_standard_new"
                 android:textSize="@dimen/learn_font_size_small"
                 android:textColor="@color/learn_gradient_grey_1"
-                android:textAppearance="@style/LearnerFontBold"
                 android:layout_marginEnd="@dimen/learn_font_size_large"
                 android:text="@string/learn_lbl_by_category" />
 
@@ -119,7 +116,6 @@
                 android:layout_marginStart="@dimen/learn_spacing_standard_new"
                 android:textSize="@dimen/learn_font_size_small"
                 android:textColor="@color/learn_gradient_grey_1"
-                android:textAppearance="@style/LearnerFontBold"
                 android:layout_marginEnd="@dimen/learn_font_size_large"
                 android:text="@string/learn_lbl_by_cost_range" />
             <LinearLayout
@@ -144,7 +140,6 @@
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/learn_font_size_xlarge"
                     android:textColor="@color/learn_gradient_grey_1"
-                    android:textAppearance="@style/LearnerFontBold"
                     android:textStyle="bold"
                     android:layout_gravity="center_vertical"
                     android:text="@string/learn_lbl__50" />
@@ -159,7 +154,6 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="@dimen/_minus4sdp"
                 android:textSize="@dimen/learn_font_size_normal"
-                android:textAppearance="@style/LearnerFontSemiBold"
                 android:text="@string/learn_lbl_apply"/>
 
 
