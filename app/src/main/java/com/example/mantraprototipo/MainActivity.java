@@ -2,6 +2,7 @@ package com.example.mantraprototipo;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.net.wifi.hotspot2.pps.Credential;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -34,33 +35,150 @@ import com.google.firebase.auth.PlayGamesAuthProvider;
 import com.google.firebase.auth.SignInMethodQueryResult;
 import com.google.firebase.auth.UserInfo;
 import com.google.firebase.auth.UserProfileChangeRequest;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-//Tula.
+import androidx.appcompat.app.AppCompatActivity;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Base64;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
+import android.os.Bundle;
+
+import android.preference.PreferenceManager;
+import android.provider.MediaStore;
+import android.text.Editable;
+import android.util.Base64;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
     private TextView mSignupTextView2;
+    private Button Login;
+    private TextView correo;
+    private TextView contrasena;
+    private  String contraseñaS;
+    private  String correoS;
+
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.learn_activity_login);
         //Inflar widgets
-        mSignupTextView2=findViewById(R.id.signupTextView2);
-//Evento on click
-        mSignupTextView2.setOnClickListener(new View.OnClickListener(){
-        @Override
-        public void onClick(View view) {
-            //Intent i=new Intent(MainActivity.this.OtherActivity.Class);
-            //starActivity(i)
-            //String message = signupTextView2.getText().toString();
-            Intent i = Signup.newIntent(MainActivity.this, "");
-            startActivity(i);
+        correo = findViewById(R.id.correoEditar);
+        contrasena = findViewById(R.id.contraseñaEditar);
+        Login=findViewById(R.id.loginButton);
+
+        Login.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                SignInC();
             }
         });
     }
+
+    public void SignInC(){
+        FirebaseAuth mAuth;
+        mAuth = FirebaseAuth.getInstance();
+        correoS = correo.getText().toString();
+        contraseñaS = contrasena.getText().toString();
+
+        mAuth.signInWithEmailAndPassword(correoS, contraseñaS)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            FirebaseUser user = mAuth.getCurrentUser();
+
+                            AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
+                            alertDialog.setTitle("Operacion Exitosa");
+                            alertDialog.setMessage("Has iniciado sesion, " + user.getEmail() + ".");
+                            alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                                    new DialogInterface.OnClickListener() {
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            dialog.dismiss();
+                                        }
+                                    });
+                            alertDialog.show();
+
+                        } else {
+                            AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
+                            alertDialog.setTitle("Cagaste");
+                            alertDialog.setMessage("Cagaste Master.");
+                            alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                                    new DialogInterface.OnClickListener() {
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            dialog.dismiss();
+                                        }
+                                    });
+                            alertDialog.show();
+                        }
+                    }
+                });
+        }
 
     public void checkCurrentUser() {
         // [START check_current_user]

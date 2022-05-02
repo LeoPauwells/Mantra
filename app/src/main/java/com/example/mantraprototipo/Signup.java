@@ -139,8 +139,8 @@ public class Signup extends AppCompatActivity{
                                 else
                                 {
                                     Map<String, Object> data = new HashMap<>();
-                                    data.put("contraseña", correoAlta);
-                                    data.put("correo", passwordAlta);
+                                    data.put("correo", correoAlta);
+                                    data.put("contraseña", passwordAlta);
                                     data.put("telefono",telefonoAlta);
                                     data.put("username",usernameAlta);
 
@@ -155,7 +155,7 @@ public class Signup extends AppCompatActivity{
                                             .addOnFailureListener(new OnFailureListener() {
                                                 @Override
                                                 public void onFailure(@NonNull Exception e) {
-                                                    Log.w(TAG, "Error dando la alta.", e);
+                                                    Warning();
                                                 }
                                             });
                                 }
