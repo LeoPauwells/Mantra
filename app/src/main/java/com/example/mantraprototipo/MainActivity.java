@@ -163,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
                                         }
                                     });
                             alertDialog.show();
-                            Intent i = new Intent(MainActivity.this, Quizz.class);
+                            Intent i = new Intent(MainActivity.this, NavigationDraverActivity.class);
                             startActivity(i);
 
                         } else {

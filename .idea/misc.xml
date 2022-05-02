@@ -14,8 +14,15 @@
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/drawable-v24/ic_phone.xml" value="0.2703125" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/drawable-v24/ic_plus.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/drawable-v24/ic_twitter.xml" value="0.2703125" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/activity_maps.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/activity_navigation_draver.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/activity_signup.xml" value="0.34915254237288135" />
-        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/learn_activity_achivements.xml" value="0.18958333333333333" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/app_bar_navigation_draver.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/content_navigation_draver.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/fragment_gallery.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/fragment_slideshow.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/learn_activity_achivements.xml" value="0.31141868512110726" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/learn_activity_chat.xml" value="0.18958333333333333" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/learn_activity_instructor_detail.xml" value="0.18958333333333333" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/learn_activity_login.xml" value="0.264" />
@@ -24,6 +31,9 @@
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/learn_fragment_chats.xml" value="0.18958333333333333" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/learn_fragment_lessons.xml" value="0.18958333333333333" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/learn_fragment_profile.xml" value="0.18958333333333333" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/nav_header_navigation_draver.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/menu/activity_main_drawer.xml" value="0.264" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/menu/navigation_draver.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
