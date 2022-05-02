@@ -27,4 +27,5 @@
         android:name="com.example.mantraprototipo.MainActivity"
         android:label="learn_activity_search"
         tools:layout="@layout/learn_activity_search" />
+
 </navigation>

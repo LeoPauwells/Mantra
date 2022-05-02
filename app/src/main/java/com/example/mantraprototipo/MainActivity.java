@@ -128,14 +128,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.learn_activity_login);
         //Inflar widgets
+
         correo = findViewById(R.id.correoEditar);
         contrasena = findViewById(R.id.contraseñaEditar);
         Login=findViewById(R.id.loginButton);
+        mSignupTextView2=findViewById(R.id.signupTextView2);
 
         Login.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 SignInC();
+            }
+        });
+        mSignupTextView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(MainActivity.this,"Signup");
+                startActivity(i);
             }
         });
     }
@@ -145,7 +154,6 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         correoS = correo.getText().toString();
         contraseñaS = contrasena.getText().toString();
-
         mAuth.signInWithEmailAndPassword(correoS, contraseñaS)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -181,6 +189,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
         }
+
 
     public void checkCurrentUser() {
         // [START check_current_user]
