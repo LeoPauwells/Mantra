@@ -163,6 +163,8 @@ public class MainActivity extends AppCompatActivity {
                                         }
                                     });
                             alertDialog.show();
+                            Intent i = new Intent(MainActivity.this, Quizz.class);
+                            startActivity(i);
 
                         } else {
                             AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
