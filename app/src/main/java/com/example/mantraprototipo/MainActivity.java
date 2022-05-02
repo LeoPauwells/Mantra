@@ -7,6 +7,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -38,11 +41,25 @@ import java.util.concurrent.TimeUnit;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
+    private TextView mSignupTextView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.learn_activity_login);
+        //Inflar widgets
+        mSignupTextView2=findViewById(R.id.signupTextView2);
+//Evento on click
+        mSignupTextView2.setOnClickListener(new View.OnClickListener(){
+        @Override
+        public void onClick(View view) {
+            //Intent i=new Intent(MainActivity.this.OtherActivity.Class);
+            //starActivity(i)
+            //String message = signupTextView2.getText().toString();
+            Intent i = Signup.newIntent(MainActivity.this, "");
+            startActivity(i);
+            }
+        });
     }
 
     public void checkCurrentUser() {

@@ -100,16 +100,16 @@
             android:textSize="@dimen/learn_font_size_medium"
             android:text="@string/learn_lbl_don_t_joined_yet"
             />
-
         <TextView
             android:id="@+id/signupTextView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/learn_spacing_standard_new"
-            android:padding="@dimen/learn_spacing_control"
-            android:text="@string/learn_lbl_join"
             android:textColor="@color/learn_colorPrimary"
-            android:textSize="@dimen/learn_font_size_medium" />
+            android:textSize="@dimen/learn_font_size_medium"
+            android:padding="@dimen/learn_spacing_control"
+            android:layout_marginBottom="@dimen/learn_spacing_standard_new"
+            android:text="@string/learn_lbl_join"
+            />
     </LinearLayout>
 
 </RelativeLayout>

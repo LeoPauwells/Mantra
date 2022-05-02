@@ -2,6 +2,7 @@ package com.example.mantraprototipo;
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -88,7 +89,11 @@ public class Signup extends AppCompatActivity{
     //Creacion de constantes
     private  static final int REQUEST_CODE_NAME=0;
     private static final String TAG="etiqueta";
-
+    public static Intent newIntent(Context context, String message){
+        Intent i=new Intent(context,Signup.class);
+       // i.putExtra(SEND_MESSAGE,message);
+        return i;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
