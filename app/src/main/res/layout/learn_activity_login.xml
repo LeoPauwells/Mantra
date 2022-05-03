@@ -25,7 +25,12 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
+<<<<<<< HEAD
             android:layout_height="match_parent"
+=======
+            android:layout_height="141dp"
+            app:srcCompat="@mipmap/ic_banner_foreground"
+>>>>>>> 1ba88c5de34312678201e89c74bbdaa34e241a48
             tools:src="@mipmap/ic_banner_foreground" />
 
         <EditText
