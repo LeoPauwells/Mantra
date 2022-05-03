@@ -6,15 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/learn_bg_gradient_grey"
     tools:context=".MainActivity">
-
-    <ImageView
-        android:id="@+id/ivBack"
-        android:layout_width="@dimen/_30sdp"
-        android:layout_height="@dimen/_30sdp"
-        android:layout_marginStart="@dimen/learn_spacing_standard_new"
-        android:layout_marginTop="@dimen/learn_spacing_standard_new"
-        android:padding="@dimen/_5sdp"
-        android:src="@drawable/learn_ic_back" />
+    
 
     <LinearLayout
         android:orientation="vertical"
@@ -25,12 +17,8 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-<<<<<<< HEAD
             android:layout_height="match_parent"
-=======
-            android:layout_height="141dp"
             app:srcCompat="@mipmap/ic_banner_foreground"
->>>>>>> 1ba88c5de34312678201e89c74bbdaa34e241a48
             tools:src="@mipmap/ic_banner_foreground" />
 
         <EditText
