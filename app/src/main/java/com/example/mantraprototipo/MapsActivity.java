@@ -44,8 +44,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng hospitaldesaludmental = new LatLng(32.551691,-116.910039);
+        LatLng psicologoinfantil = new LatLng(32.537729,-116.935695);
+        LatLng centroterapeutico = new LatLng(32.535598,-116.933242);
+        LatLng psicosaludintegral = new LatLng(32.512016,-116.985873);
+        mMap.addMarker(new MarkerOptions().position(hospitaldesaludmental).title("Hospital de salud mental de Tijuana"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(hospitaldesaludmental));
+        mMap.addMarker(new MarkerOptions().position(psicologoinfantil).title("Psicologia integral, psicologo infantil"));
+        mMap.addMarker(new MarkerOptions().position(centroterapeutico).title("Centro terapeutico Avanza"));
+        mMap.addMarker(new MarkerOptions().position(psicosaludintegral).title("Centro terapeutico Avanza"));
+
     }
 }

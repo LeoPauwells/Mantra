@@ -27,5 +27,10 @@
         android:name="com.example.mantraprototipo.MainActivity"
         android:label="learn_activity_search"
         tools:layout="@layout/learn_activity_search" />
+    <activity
+        android:id="@+id/quizz_Activity"
+        android:name="com.example.mantraprototipo.Quizz_Activity"
+        android:label="activity_quizz"
+        tools:layout="@layout/activity_quizz" />
 
 </navigation>
