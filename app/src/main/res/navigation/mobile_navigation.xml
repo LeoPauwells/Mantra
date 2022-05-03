@@ -32,5 +32,15 @@
         android:name="com.example.mantraprototipo.Quizz_Activity"
         android:label="activity_quizz"
         tools:layout="@layout/activity_quizz" />
+    <activity
+        android:id="@+id/rutinas"
+        android:name="com.example.mantraprototipo.Rutinas"
+        android:label="activity_rutinas"
+        tools:layout="@layout/activity_rutinas" />
+    <activity
+        android:id="@+id/foro"
+        android:name="com.example.mantraprototipo.foro"
+        android:label="activity_foro"
+        tools:layout="@layout/activity_foro" />
 
 </navigation>

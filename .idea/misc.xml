@@ -5,7 +5,6 @@
       <map>
         <entry key="..\:/Repositorios/Mantra/app/src/main/res/layout/activity_signup.xml" value="0.1" />
         <entry key="..\:/Repositorios/Mantra/app/src/main/res/layout/learn_activity_login.xml" value="0.1" />
-        <entry key="..\:/Users/Andy owo/Documents/GitHub/Mantra/app/src/main/res/layout/learn_activity_login.xml" value="0.21739130434782608" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/drawable-v24/button1_bg.xml" value="0.2703125" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/drawable-v24/ic_back.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/drawable-v24/ic_facebook.xml" value="0.2703125" />
@@ -15,10 +14,12 @@
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/drawable-v24/ic_phone.xml" value="0.2703125" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/drawable-v24/ic_plus.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/drawable-v24/ic_twitter.xml" value="0.2703125" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/activity_foro.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/activity_maps.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/activity_navigation_draver.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/activity_profile.xml" value="0.12291666666666666" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/activity_quizz.xml" value="0.264" />
+        <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/activity_rutinas.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/activity_signup.xml" value="0.34915254237288135" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/app_bar_navigation_draver.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/leo_j/Documents/GitHub/Mantra/app/src/main/res/layout/content_navigation_draver.xml" value="0.25416666666666665" />

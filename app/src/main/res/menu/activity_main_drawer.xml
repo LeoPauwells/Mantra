@@ -11,7 +11,7 @@
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/learn_ic_team"
-            android:title="Foro" />
+            android:title="gallery" />
         <item
             android:id="@+id/busqueda"
             android:icon="@android:drawable/ic_menu_search"
@@ -24,5 +24,13 @@
             android:id="@+id/quizz_Activity"
             android:icon="@android:drawable/ic_menu_edit"
             android:title="Quizz"/>
+        <item
+            android:id="@+id/rutinas"
+            android:icon="@android:drawable/ic_lock_idle_alarm"
+            android:title="Rutinas" />
+        <item
+            android:id="@+id/foro"
+            android:icon="@drawable/learn_ic_megaphone"
+            android:title="Foro" />
     </group>
 </menu>
