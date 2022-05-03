@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/learn_bg_gradient_grey"
     tools:context=".MainActivity">
-    
+
 
     <LinearLayout
         android:orientation="vertical"
