@@ -56,12 +56,12 @@
                 android:id="@+id/passwordRecoveryTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@null"
-                android:layout_marginEnd="@dimen/learn_spacing_standard_new"
                 android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/learn_spacing_standard_new"
+                android:background="@null"
+                android:text="@string/learn_lbl_forget"
                 android:textColor="@color/learn_colorPrimary"
-                android:textSize="@dimen/learn_font_size_normal"
-                android:text="@string/learn_lbl_forget" />
+                android:textSize="@dimen/learn_font_size_normal" />
 
 
         </RelativeLayout>
@@ -86,7 +86,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/tvNote"
-            android:layout_above="@id/tvTOC"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/learn_textColorPrimary"
