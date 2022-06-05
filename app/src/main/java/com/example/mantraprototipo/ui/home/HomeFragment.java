@@ -59,7 +59,7 @@ public class HomeFragment extends Fragment {
                     public void onSuccess(DocumentSnapshot documentSnapshot) {
                         if (documentSnapshot.exists())
                         {
-                            nombre.setText(documentSnapshot.getString("nombre"),TextView.BufferType.EDITABLE);
+                            nombre.setText(documentSnapshot.getString("username"),TextView.BufferType.EDITABLE);
 
                         }
                     }

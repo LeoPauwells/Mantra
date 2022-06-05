@@ -35,7 +35,6 @@
                 style="@style/LearnHeadingBig"
                 android:layout_marginStart="@dimen/learn_spacing_middle"
                 android:layout_marginTop="@dimen/_14sdp"
-                android:text="@string/learn_lbl_nimasha_perara"
                 android:textSize="@dimen/learn_font_size_xlarge"
                 android:textStyle="bold" />
             <TextView
