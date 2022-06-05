@@ -155,6 +155,7 @@ public class MainActivity extends AppCompatActivity {
         FirebaseAuth mAuth;
         mAuth = FirebaseAuth.getInstance();
         correoS = correo.getText().toString();
+        Transportador.svar1= correoS;
         contraseñaS = contrasena.getText().toString();
         mAuth.signInWithEmailAndPassword(correoS, contraseñaS)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {

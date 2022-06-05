@@ -13,7 +13,7 @@
             android:icon="@drawable/learn_ic_team"
             android:title="gallery" />
         <item
-            android:id="@+id/busqueda"
+            android:id="@+id/learn_activity_search"
             android:icon="@android:drawable/ic_menu_search"
             android:title="Busqueda de ayuda" />
         <item

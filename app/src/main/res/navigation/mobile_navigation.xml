@@ -23,7 +23,7 @@
         android:label="activity_maps"
         tools:layout="@layout/activity_maps" />
     <activity
-        android:id="@+id/busqueda"
+        android:id="@+id/learn_activity_search"
         android:name="com.example.mantraprototipo.MainActivity"
         android:label="learn_activity_search"
         tools:layout="@layout/learn_activity_search" />

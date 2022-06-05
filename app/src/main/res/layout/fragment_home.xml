@@ -33,11 +33,11 @@
             <TextView
                 android:id="@+id/tvUserName"
                 style="@style/LearnHeadingBig"
-                android:textSize="@dimen/learn_font_size_xlarge"
-                android:layout_marginTop="@dimen/_14sdp"
                 android:layout_marginStart="@dimen/learn_spacing_middle"
-                android:textStyle="bold"
-                android:text="@string/learn_lbl_nimasha_perara" />
+                android:layout_marginTop="@dimen/_14sdp"
+                android:text="@string/learn_lbl_nimasha_perara"
+                android:textSize="@dimen/learn_font_size_xlarge"
+                android:textStyle="bold" />
             <TextView
                 android:id="@+id/tvStartNewChat"
                 android:layout_width="wrap_content"
